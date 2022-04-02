@@ -1,71 +1,52 @@
-languageCode: "en-us"
 baseUrl: "https://balintfodor.github.io/"
-title: "Anubis"
-theme: "anubis"
-paginate: 10
-disqusShortname: "yourdiscussshortname"
-googleAnalytics: "G-12345"
-enableRobotsTXT: true
-
-menu:
-  main:
-  - identifier: archive
-    name: Archive
-    title: Archive
-    url: /posts/
-    weight: 0
+languageCode: en-us
+theme: hugo-theme-stack
+paginate: 5
+title: bf_brn.dmp
 
 params:
-  author: "John Doe"
-  email: mail@example.org # used for microformats
-  avatar: "/images/me.png" # used for microformats
-  description: ""
-  # Uncomment if you need this
-  # images:
-  #   - images/og-featured.png # relative path to "static" directory
-  # customCSS:
-  #   - css/my.css # relative path to "assets" directory (don't use main.css filename)
-  # customJS:
-  #   - js/main.js # relative path to "assets" directory
-  dateFormat: "2006-01-02"
-  paginationSinglePost: true
-  style: light-without-switcher
-  readMore: false # show read more button
-  readNextPosts: 5  # show 5 related posts, 0 by default
-  disableSummary: false
-  copyCodeButton: true # true by default
-  rssAsSocialIcon: true
-  # utteranc.es support
-  utterancesRepo: ""  # mandatory
-  utterancesTheme: "" # optional
-  utterancesIssue: "" # optional
-  utterancesLabel: "" # optional
-  # isso support
-  isso:
-    enabled: true # mandatory
-    data: "https://comments.example.com/" # mandatory
-    jsLocation: "https://comments.example.com/js/embed.min.js" # mandatory
-    css: true # optional
-    lang: "de" # optional
-    replyToSelf: true # mandatory
-    requireAuthor: true # mandatory
-    requireEmail: true # mandatory
-    id: "thread-id" # optional
-    avatar: true # optional
-    avatar-bg: "#f0f0f0" # optional
-  graphcommentId: ""
-  webmentions:
-    url: https://yourdomain.com/webemntions/receive
-    login: hugo-theme-anubis
-    pingback: true
-  social:
-  - id: github
-    name: gohugoio
-#  - id: hugo
-#    url: "https://gohugo.io/"
-#    icon: "hugo"
+    mainSections:
+        - post
+    featuredImageField: image
+    rssFullContent: true
+    favicon:
 
-markup:
-  goldmark:
-    renderer:
-      unsafe: true # enable raw HTML in Markdown
+    footer:
+        since: 2020
+        customText:
+
+    # dateFormat:
+    #     published: Jan 02, 2006
+    #     lastUpdated: Jan 02, 2006 15:04 MST
+
+    sidebar:
+        subtitle: a place for my brain dumps
+        avatar:
+            enabled: true
+            local: true
+            src: img/avatar.jpeg
+
+    article:
+        math: true
+        toc: true
+        readingTime: true
+
+    colorScheme:
+        toggle: true
+        default: auto
+
+    imageProcessing:
+        cover:
+            enabled: true
+        content:
+            enabled: true
+
+menu:
+    main: []
+
+    social:
+        - identifier: github
+          name: GitHub
+          url: https://github.com/balintfodor
+          params:
+              icon: brand-github
