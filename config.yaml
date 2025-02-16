@@ -1,7 +1,7 @@
 baseUrl: "https://balintfodor.github.io/"
 languageCode: en-us
 theme: hugo-theme-stack
-paginate: 5
+# paginate: 5
 title: bf_brn.dmp
 
 params:
