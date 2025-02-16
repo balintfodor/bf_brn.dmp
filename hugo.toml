@@ -1,0 +1,12 @@
+baseURL = 'https://balintfodor.github.io/'
+languageCode = 'en-us'
+title = 'bf_brn.dmp'
+theme = 'coming-soon'
+
+[params]
+    title = " "
+    description = ""
+    favicon = ""
+    message = "coming soon"
+    release = "January 1, 2086"
+    background = ""
